@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="add_product_form">
+        <label for="product_sku">
+          <span>Product SKU</span>
+          <input type="text" name="product_sku" id="product_sku" />
+        </label>
+        <label for="product_name">
+          <span>Product Name</span>
+          <input type="text" name="product_name" id="product_name" />
+        </label>
+        <label for="product_price">
+          <span>Product Price</span>
+          <input type="text" name="product_price" id="product_price" />
+        </label>
+        <label for="product_quantity">
+          <span>Product Quantity</span>
+          <input type="text" name="product_quantity" id="product_quantity" />
+        </label>
+        <p class="submit">
+          <input
+            type="button"
+            name="add_product"
+            id="add_product"
+            value="Add Product"
+          />
+          <input
+            type="button"
+            name="add_product"
+            id="update_product"
+            value="Update Product"
+          />
+        </p>
+      </div>
+      <div id="notification">
+        <div class="success">
+          <p class="success_message"></p>
+          <a href="#" class="close">X</a>
+        </div>
+        <div class="error">
+          <p class="error_message"></p>
+          <a href="#" class="close">X</a>
+        </div>
+      </div>
+      <div id="delete">
+        <h1>are you sure You want to Delete?</h1>
+        <input type="button" id="btnDelete" value="delete" />
+        <input type="button" id="btnCancel" value="cancel" />
+      </div>
+      <div id="product_list">
+        <table>
+          <tr>
+            <th>SKU</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </table>
+        <script src="jQuery.js"></script>
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
